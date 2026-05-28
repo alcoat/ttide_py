@@ -6,7 +6,7 @@ def readme():
         return f.read()
 
 setup(name='ttide',
-      version='0.3dev1',
+      version='0.3dev2',
       description='Python distribution of the MatLab package TTide.',
       long_description=readme(),
       url='https://github.com/moflaher/ttide_py',
@@ -15,4 +15,5 @@ setup(name='ttide',
       license='MIT',
       packages=['ttide'],
       package_data={'ttide': ['data/*.nc']},
+      install_requires=["numpy", "scipy" ],
       zip_safe=False)
